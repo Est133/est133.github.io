@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Motserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/*Reset */ 
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif ;
+}
+
+h2{
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 500%;
+}
+
+
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 80%;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.large {
+    font-size: 40px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1.5rem 3rem;
+    
+}
+
+.btn-outline {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: #1a1717;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 50;
+    border-radius: 3rem;
+}
+.btn-outline:hover {
+    background-color: rgb(35, 127, 207);
+    color: #161515;
+}
+
+#navbar, #navbar1 {
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#navbar a{
+    color: #000;
+}
+#navbar .logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+#navbar img {
+    width: 10em;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    padding-top: auto;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+#navbar ul li{
+    float: right;
+}
+
+#navbar ul li a{     /*aqui esta el menun de inicio*/ 
+    display: block;;
+    padding: 20px;
+    text-align: center;
+    color:rgb(35, 127, 207);
+    font-size: 18px; /* Tamaño de letra más grande */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    text-decoration: none; /* Elimina la decoración de subrayado */
+ }
+
+ #navbar1{
+    position: relative;
+ }
+
+ #navbar1 .btn-outline{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+ 
+ @media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-outline {
+        padding: 1.5% 3%;
+    }
+
+    #navbar1 .btn-outline {
+        /* Ajusta estos valores según tus necesidades */
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+#showcase {
+   background: url("imgenes/dibujo3.png"); 
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   height: 100vh;
+   text-align: center;
+   
+}
+
+#showcase .btn {
+    margin-top: 40vh;
+    text-align: center;
+}
+
+.logo1 img {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+} 
+#projects {
+    padding: 20px 0;
+}
+
+.projects-row {
+    display: flex;
+    justify-content: space-around; /* Otra opción: justify-content: space-around; */
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    text-align: center; /* Alinea el contenido en el centro si es necesario */
+    width: 30%;
+    margin-bottom: 20px;
+
+}
+
+.projects-item img {
+    max-width: 100%; /* Asegúrate de que las imágenes no superen el ancho del contenedor */
+}
+
+#projects a{
+    font-weight: bold;
+}
+#projects a:hover {
+    color: #20dce2; /* Cambia el color al pasar el mouse */
+}
+
+#about {
+    padding: 80px 0;
+    background: #dcd8f8;
+}
+
+.about-row {
+    display: flex;
+}
+
+.about-row-experience {
+    width: 45%;
+    padding-left: 12px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-row-experience .experience-item {
+    width: 33.33%; /* Asegura que haya 3 elementos por fila */
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho */
+    margin-bottom: 12px;
+}
+
+.about-row-experience img {
+    width: 30%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto;
+    color: #2c1f74;
+}
+
+.about-row-me {
+    width: 50%;
+    padding-left: 70px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.about-row-me p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3f2f2f;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+/* Agrega estilos a la sección de Contacto */
+#contact {
+    background-color: #f8f8f8; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto al centro */
+}
+
+.contact-row-icon {
+    display: flex; /* Muestra los elementos en línea */
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.contact-row-icon img {
+    width: 10%; /* Ancho de las imágenes */
+    margin-bottom: 10px;
+}
+
+.contact-row-icon p {
+    margin: 0; /* Elimina el margen del párrafo */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #c45e99;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Agrega estilos al footer */
+footer {
+    background-color: #fff; /* Color de fondo del footer */
+    color: #080808; /* Color del texto en el footer */
+    padding: 20px 0; /* Espaciado interno en el footer */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.container p {
+    margin: 0; /* Elimina el margen del párrafo dentro del footer */
+}
+
